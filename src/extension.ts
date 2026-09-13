@@ -33,7 +33,7 @@ function selectedEnvFile(context: vscode.ExtensionContext): string | undefined {
 function runAndRecord(context: vscode.ExtensionContext, args: string[]): void {
   const workDirectory = currentWorkDirectory();
   if (!workDirectory) {
-    void vscode.window.showErrorMessage('React Native Companion: open a folder first.');
+    void vscode.window.showErrorMessage('React Native Device Companion: open a folder first.');
     return;
   }
   run(workDirectory, args, selectedEnvFile(context));
@@ -81,7 +81,7 @@ export function activate(context: vscode.ExtensionContext): void {
     async () => {
       const workDirectory = currentWorkDirectory();
       if (!workDirectory) {
-        void vscode.window.showErrorMessage('React Native Companion: open a folder first.');
+        void vscode.window.showErrorMessage('React Native Device Companion: open a folder first.');
         return;
       }
       const profiles = [NO_ENV_PROFILE, ...discoverEnvProfiles(workDirectory)];

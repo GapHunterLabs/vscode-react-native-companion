@@ -1,6 +1,6 @@
 {
   "name": "react-native-companion",
-  "displayName": "React Native Companion",
+  "displayName": "React Native Device Companion",
   "description": "Run React Native commands (run-android, run-ios, Metro) from a panel without freezing the editor, with real Android/iOS device discovery and multi-environment .env profiles.",
   "version": "0.1.0",
   "publisher": "GapHunterLabs",
@@ -31,38 +31,38 @@
       {
         "command": "reactNativeCompanion.runAndroid",
         "title": "React Native: Run Android",
-        "category": "React Native Companion"
+        "category": "React Native Device Companion"
       },
       {
         "command": "reactNativeCompanion.runIos",
         "title": "React Native: Run iOS",
-        "category": "React Native Companion"
+        "category": "React Native Device Companion"
       },
       {
         "command": "reactNativeCompanion.startMetro",
         "title": "React Native: Start Metro",
-        "category": "React Native Companion"
+        "category": "React Native Device Companion"
       },
       {
         "command": "reactNativeCompanion.buildAndroidRelease",
         "title": "React Native: Build Android Release",
-        "category": "React Native Companion"
+        "category": "React Native Device Companion"
       },
       {
         "command": "reactNativeCompanion.buildIosRelease",
         "title": "React Native: Build iOS Release",
-        "category": "React Native Companion"
+        "category": "React Native Device Companion"
       },
       {
         "command": "reactNativeCompanion.refreshDevices",
         "title": "React Native: Refresh Devices",
-        "category": "React Native Companion",
+        "category": "React Native Device Companion",
         "icon": "$(refresh)"
       },
       {
         "command": "reactNativeCompanion.selectEnvProfile",
         "title": "React Native: Select Environment Profile",
-        "category": "React Native Companion"
+        "category": "React Native Device Companion"
       }
     ],
     "views": {

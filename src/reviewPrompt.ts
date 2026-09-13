@@ -50,7 +50,7 @@ function showPrompt(context: vscode.ExtensionContext): void {
 
   void vscode.window
     .showInformationMessage(
-      `React Native Companion: you've used this ${HITS_BEFORE_PROMPT} times -- if it's saved you time, a rating on the Marketplace helps other developers find it.`,
+      `React Native Device Companion: you've used this ${HITS_BEFORE_PROMPT} times -- if it's saved you time, a rating on the Marketplace helps other developers find it.`,
       rateAction,
       dismissAction,
     )
