@@ -1,4 +1,4 @@
-# React Native Companion
+# React Native Device Companion
 
 Run React Native commands (`run-android`, `run-ios`, Metro) from VS
 Code without blocking the editor, plus a real Android/iOS device and

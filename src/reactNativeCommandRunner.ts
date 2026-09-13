@@ -18,7 +18,7 @@ import * as vscode from 'vscode';
  * is the fix, not an optimization.
  */
 
-const TERMINAL_NAME = 'React Native Companion';
+const TERMINAL_NAME = 'React Native Device Companion';
 
 let sharedTerminal: vscode.Terminal | undefined;
 
