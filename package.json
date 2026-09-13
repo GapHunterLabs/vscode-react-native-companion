@@ -1,0 +1,106 @@
+{
+  "name": "react-native-companion",
+  "displayName": "React Native Companion",
+  "description": "Run React Native commands (run-android, run-ios, Metro) from a panel without freezing the editor, with real Android/iOS device discovery and multi-environment .env profiles.",
+  "version": "0.1.0",
+  "publisher": "GapHunterLabs",
+  "icon": "images/icon.png",
+  "license": "Apache-2.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "react-native",    "metro",    "android",    "ios",    "mobile",    "cli",    "device"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GapHunterLabs/vscode-react-native-companion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GapHunterLabs/vscode-react-native-companion/issues"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reactNativeCompanion.runAndroid",
+        "title": "React Native: Run Android",
+        "category": "React Native Companion"
+      },
+      {
+        "command": "reactNativeCompanion.runIos",
+        "title": "React Native: Run iOS",
+        "category": "React Native Companion"
+      },
+      {
+        "command": "reactNativeCompanion.startMetro",
+        "title": "React Native: Start Metro",
+        "category": "React Native Companion"
+      },
+      {
+        "command": "reactNativeCompanion.buildAndroidRelease",
+        "title": "React Native: Build Android Release",
+        "category": "React Native Companion"
+      },
+      {
+        "command": "reactNativeCompanion.buildIosRelease",
+        "title": "React Native: Build iOS Release",
+        "category": "React Native Companion"
+      },
+      {
+        "command": "reactNativeCompanion.refreshDevices",
+        "title": "React Native: Refresh Devices",
+        "category": "React Native Companion",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "reactNativeCompanion.selectEnvProfile",
+        "title": "React Native: Select Environment Profile",
+        "category": "React Native Companion"
+      }
+    ],
+    "views": {
+      "reactNativeCompanion": [
+        {
+          "id": "reactNativeCompanion.devices",
+          "name": "Devices & Simulators"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "reactNativeCompanion",
+          "title": "React Native",
+          "icon": "images/icon.png"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "reactNativeCompanion.refreshDevices",
+          "when": "view == reactNativeCompanion.devices",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "test": "tsc -p ./ && node --test \"out/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.2"
+  }
+}
