@@ -2,7 +2,7 @@
   "name": "react-native-companion",
   "displayName": "React Native Device Companion",
   "description": "Run React Native commands (run-android, run-ios, Metro) from a panel without freezing the editor, with real Android/iOS device discovery and multi-environment .env profiles.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "GapHunterLabs",
   "icon": "images/icon.png",
   "license": "Apache-2.0",
