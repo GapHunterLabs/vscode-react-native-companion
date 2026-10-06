@@ -1,12 +1,12 @@
 # Privacy Policy — React Native Device Companion
 
-**Effective date:** 2026-09-13
+**Effective date:** 2026-10-06
 
 React Native Device Companion is a Gap Hunter Labs extension for Visual Studio Code.
 
 ## What this extension collects
 
-**Nothing.** React Native Device Companion does not collect, store, transmit, or sell any
+**Nothing.** React Native Device Companion does not collect, transmit, or sell any
 data — no source code, no file contents, no usage analytics, no
 telemetry, no crash reports, no personally identifiable information.
 
@@ -26,6 +26,13 @@ Code integrated terminal, so you can see and control exactly what runs:
 All of these run locally as regular child processes, exactly as if you
 had typed the command yourself. The extension does not modify, wrap, or
 intercept what these tools do.
+
+## What it keeps on your machine
+
+To decide when to show its one-time rating prompt, the extension keeps two
+values in VS Code's storage for the extension on your computer: how many
+findings it has shown and whether you have answered the prompt. Neither is
+ever sent anywhere.
 
 ## Network access
 
