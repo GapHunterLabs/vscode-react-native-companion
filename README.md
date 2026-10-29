@@ -45,8 +45,8 @@ when.
 
 ## Enterprise / Team Licensing
 
-Need enterprise features or team licensing? Contact us at
-**gaphunterlabs@gmail.com**.
+Need enterprise features or team licensing? Write to me at
+**contact@gaphunterlabs.com**.
 
 ## Development
 
